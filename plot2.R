@@ -1,15 +1,12 @@
-# Note: skip to step 4 if you have the required dataset in your working directory and have the
-#       required packages. Otherwise, do steps 1-2 (un-comment step 2 to download the data)
-# Note: script assumes your unzipped folder name is "powerdata" (see step 2)
 
 # 1 # required packages
 library(data.table) 
 library(dplyr)
 
 # 2 # download and unzip dataset (un-comment if needed)
-#zipurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
-#download.file(zipurl, "power.zip", method="auto")
-#unzip("power.zip", exdir="powerdata")
+zipurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+download.file(zipurl, "power.zip", method="auto")
+unzip("power.zip", exdir="powerdata")
 
 # 3 # create required dataframe (using data.table)
 file <- "powerdata/household_power_consumption.txt" # note folder name as "powerdata"
