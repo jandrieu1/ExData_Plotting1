@@ -22,7 +22,11 @@ for (i in c(5, 7, 8, 9)) {
   psub[, i] <- as.numeric(as.character(psub[, i])) # by column index
 }
 
-# 6 # plot3
+# 5 # plot3
+
+plotvars <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+plotcolors <- c("black", "red", "blue")
+
 png(file="plot3.png", width=480, height=480)
   plot(psub$dt, psub$Sub_metering_1, type="l", ann=F)
     lines(psub$dt, psub$Sub_metering_2, type="l", ann=F, col=plotcolors[2])

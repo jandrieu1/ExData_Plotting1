@@ -22,7 +22,7 @@ for (i in c(5, 7, 8, 9)) {
   psub[, i] <- as.numeric(as.character(psub[, i])) # by column index
 }
 
-# 6 # plot2
+# 5 # plot2
 png(file="plot2.png", width=480, height=480)
 plot(psub$dt, psub$gap, type="l", ann=F)
      title(ylab="Global Active Power (kilowatts)")
